@@ -1,4 +1,4 @@
-ANGULAR2 STARWARS APP
+#ANGULAR2 STARWARS APP
 
 To open project with node server open terminal and type:
 
