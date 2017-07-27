@@ -1,0 +1,73 @@
+.hero {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1000px;
+}
+
+.menu {
+    padding: 10px;
+
+    button {
+        color: #FFE300;
+        border-color: #FFE300;
+        background-color: #000;
+        -webkit-transition: .5s background;
+        -o-transition: .5s background;
+        transition: .5s background;
+        outline: none;
+
+        &:hover {
+            color: #000;
+            border-color: #000;
+            background-color: #FFE300;
+        }
+    }
+}
+
+.hero_title {
+    color: #FFE300;
+    font-size: 52px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero_details {
+    position: relative;
+    padding: 20px;
+    font-size: 30px;
+    color: #000;
+    text-shadow: 0px 0px 2px #FFE300;
+
+    .btn_tohero {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        transform: translateY(-50%);
+        background: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none; 
+        box-shadow: none; 
+        font-size: 56px;
+        color: #FFE300;
+        outline: none;
+        -webkit-transition: .5s opacity;
+        -o-transition: .5s opacity;
+        transition: .5s opacity;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .btn_previous-hero {
+        left: 50px;
+    }
+
+    .btn_next-hero {
+        right: 50px;
+    }
+}
+

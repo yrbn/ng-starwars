@@ -1,0 +1,45 @@
+<div *ngIf="hero" class="hero">
+  <div class="menu">
+    <button type="button" class="btn btn-instruction" (click)="open()">Instruction</button>
+    <button type="button" class="btn btn-post" (click)="postPong()">Post pong</button>
+  </div>
+
+  <h2 class="hero_title">{{hero.name}}</h2>
+
+  <div class="hero_details">
+
+    <button type="button" class="btn_tohero btn_previous-hero glyphicon glyphicon-triangle-left" (click)="gotoPreviousHero()"></button>
+    <button type="button" class="btn_tohero btn_next-hero glyphicon glyphicon-triangle-right" (click)="gotoNextHero()"></button>
+
+    <div class="hero_prop">
+      Year of birth: {{hero.birth}}
+    </div>
+    <div class="hero_prop">
+      Weight: {{hero.weight}}
+    </div>
+    <div class="hero_prop">
+      Height: {{hero.height}}
+    </div>
+    <div class="hero_prop">
+      Hair color: {{hero.hair}}
+    </div>
+    <div class="hero_prop">
+      Skin color: {{hero.skin}}
+    </div>
+    <div class="hero_prop">
+      Eye color: {{hero.eyes}}
+    </div>
+  </div>
+
+</div>
+
+<div *ngIf="isLoading && !errorMessage">
+  Loading heroes!!! Retrieving data...
+</div>
+
+<div *ngIf="errorMessage" class="alert alert-danger">
+  {{errorMessage}}
+</div>
+
+
+<ng-modal-window></ng-modal-window>
